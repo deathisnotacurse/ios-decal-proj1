@@ -93,7 +93,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Todo" id="vZq-Jx-AFu">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="d1z-6w-NLR"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="d1z-6w-NLR">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="RKT-fG-yj9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Z4o-ci-Kw8">
                             <connections>
                                 <segue destination="sWf-Bd-2aS" kind="unwind" unwindAction="unwindToTaskListWithSender:" id="sBq-Bw-oYf"/>
